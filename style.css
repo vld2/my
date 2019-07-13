@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: springgreen;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    background: green;
+    flex-wrap: wrap;
+}
+/* параметры верхушки сайта*/
+.center {
+    max-width: 1000px;
+    margin: auto;
+}
+/* параметры блока центр*/
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    background: rgb(185, 49, 49);
+}
+
+#logo {
+    height: 58px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
+}
+/* параметры лого */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* параметры контейнер */
+#sidebar {
+    width: 30%;
+}
+
+
+#content {
+width: 70%
+}
+/* параметры размер контейнер */
+.border {
+    min-height: 600px;
+    box-shadow: 0 0 4px 2px #00000061;
+    margin: 15px;
+    padding: 15px;
+    padding-left: 0px;
+}
+#content > div.border {
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-block {
+    width: 38%;
+}
+.news-block a {
+    display: block;
+    min-height: 195px
+}
+.news-wrap {
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ccc;
+}
+.news-block img {
+    max-width: 100%;
+}
+/* параметры вкладки бордер */
+#sidebar ul li a {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 20px 15px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+#sidebar ul li a:hover {
+    background: #ccc;   
+   }
+#sidebar .border {
+    margin-left: 0;
+}
+
+#content .border {
+    margin-right: 0;
+}
+@media(max-width: 1050px) {
+    #content .border, #sidebar .border {
+        margin: 8px;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .news-block a {
+        min-height: 150px;
+    }
+}
+
+@media(max-width: 760px) {
+    #sidebar, #content {
+        width: 100%;
+    }
+}
+
+.border {
+    min-height: auto;
+}
+
+@media(max-width: 630px) {
+    .news-block {
+        width: 100%;
+    }
+}
+@media(max-width: 620px) {
+    header ul ,header {
+        justify-content: center;
+    }
+    #logo {
+        display: none;
+    }
+}
+  /*параметр для лого при уменьшении */
+
